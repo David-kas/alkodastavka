@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dostavka-alkogolya.pro/sitemap.xml
+Host: https://dostavka-alkogolya.pro

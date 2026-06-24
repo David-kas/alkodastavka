@@ -1,0 +1,4 @@
+# Закрыть конфиг с токенами
+<Files "config.local.php">
+  Require all denied
+</Files>
