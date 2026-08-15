@@ -9,9 +9,15 @@ export default async function handler(req, res) {
 
   if (req.method === 'GET') {
     const { token, chatId } = getTelegramCredentials();
+    const configured = Boolean(token && chatId);
     return res.status(200).json({
-      ok: Boolean(token && chatId),
-      configured: Boolean(token && chatId),
+      ok: configured,
+      configured,
+      hasToken: Boolean(token),
+      hasChatId: Boolean(chatId),
+      hint: configured
+        ? undefined
+        : 'Задайте TELEGRAM_BOT_TOKEN и TELEGRAM_CHAT_ID в Vercel → Settings → Environment Variables и сделайте Redeploy, либо положите config/telegram.json в проект.',
     });
   }
 

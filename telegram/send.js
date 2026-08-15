@@ -3,30 +3,36 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const CONFIG_PATH = path.join(__dirname, '..', 'config', 'telegram.json');
+const CONFIG_PATHS = [
+  path.join(__dirname, '..', 'config', 'telegram.json'),
+  path.join(process.cwd(), 'config', 'telegram.json'),
+];
 
-let fileConfig = {};
-try {
-  fileConfig = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
-} catch {
-  fileConfig = {};
+function loadFileConfig() {
+  for (const configPath of CONFIG_PATHS) {
+    try {
+      return JSON.parse(fs.readFileSync(configPath, 'utf8'));
+    } catch {
+      // try next path
+    }
+  }
+  return {};
 }
 
-export const BOT_TOKEN = fileConfig.TELEGRAM_BOT_TOKEN || '';
-export const CHAT_ID = fileConfig.TELEGRAM_CHAT_ID || '';
-
 export function getTelegramCredentials() {
+  const fileConfig = loadFileConfig();
+
   const token =
     process.env.TELEGRAM_BOT_TOKEN?.trim() ||
     process.env.BOT_TOKEN?.trim() ||
     fileConfig.TELEGRAM_BOT_TOKEN ||
-    BOT_TOKEN;
+    '';
 
   const chatId =
     process.env.TELEGRAM_CHAT_ID?.trim() ||
     process.env.CHAT_ID?.trim() ||
     fileConfig.TELEGRAM_CHAT_ID ||
-    CHAT_ID;
+    '';
 
   return { token: token || '', chatId: chatId || '' };
 }

@@ -1,4 +1,12 @@
 {
+  "functions": {
+    "api/telegram.js": {
+      "includeFiles": "config/telegram.json"
+    },
+    "api/send-telegram.js": {
+      "includeFiles": "config/telegram.json"
+    }
+  },
   "redirects": [
     {
       "source": "/korporativ.html",
