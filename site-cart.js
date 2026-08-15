@@ -102,7 +102,7 @@
     }
 
     function sendTelegram(text) {
-        return fetch('/api/send-telegram', {
+        return fetch('/api/telegram', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: text }),

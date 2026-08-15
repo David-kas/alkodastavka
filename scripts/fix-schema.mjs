@@ -16,7 +16,7 @@ const ORG = {
   name: 'АЛКОдоставка',
   url: `${SITE}/`,
   logo: `${SITE}/favicon.svg`,
-  telephone: '+79997863967',
+  telephone: '+79251219972',
   sameAs: ['https://t.me/alkotaxi_bot'],
 };
 

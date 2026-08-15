@@ -29,6 +29,7 @@ export default async function handler(req, res) {
   }
 
   const {
+    message,
     name,
     phone,
     comment,
@@ -38,6 +39,18 @@ export default async function handler(req, res) {
     orderType = 'Заявка',
     pageUrl,
   } = body || {};
+
+  if (message && typeof message === 'string' && !name && !phone) {
+    const result = await sendTelegramMessage(message);
+    if (result.ok) {
+      return res.status(200).json({ success: true });
+    }
+    const status = result.code === 'TELEGRAM_NOT_CONFIGURED' ? 503 : 502;
+    return res.status(status).json({
+      error: result.error,
+      code: result.code || 'TELEGRAM_ERROR',
+    });
+  }
 
   if (!name || !phone) {
     return res.status(400).json({ error: 'Имя и телефон обязательны', code: 'VALIDATION' });

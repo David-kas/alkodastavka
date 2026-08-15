@@ -14,16 +14,22 @@
 
 ## Форма заявки
 
-Форма на `/contacts.html` отправляет POST на `/api/telegram`. Без переменных окружения Telegram заявки не дойдут.
+Формы с атрибутом `data-telegram-form` отправляют POST на `/api/telegram` (старые скрипты — на `/api/send-telegram`, тот же обработчик).
+
+**На Vercel обязательно** задайте переменные окружения `TELEGRAM_BOT_TOKEN` и `TELEGRAM_CHAT_ID` — файл `config/telegram.json` в git не попадает.
+
+Локально скопируйте `config/telegram.example.json` → `config/telegram.json` и вставьте токен и chat id.
+
+Проверка API: `GET /api/telegram` → `{"ok":true,"configured":true}`.
 
 ## Локальная разработка
 
 ```bash
-npm install -g vercel
-vercel dev
+npm install
+npm run dev
 ```
 
-`vercel dev` нужен для работы API `/api/telegram` локально.
+`npm run dev` поднимает статику и API `/api/telegram` на порту 3000. Live Server (5500) API не обслуживает — заявки не уйдут.
 
 ## Генерация SEO-страниц
 

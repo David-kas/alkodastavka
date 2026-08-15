@@ -324,26 +324,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             } else if (result.code === 'TELEGRAM_NOT_CONFIGURED') {
                 statusDiv.innerHTML =
-                    '⚠️ Оформление временно недоступно. Позвоните <a href="tel:+79997863967">+7 (999) 786-39-67</a> или напишите в WhatsApp / Telegram.';
+                    '⚠️ Оформление временно недоступно. Позвоните <a href="tel:+79251219972">+7 (925) 121-99-72</a> или напишите в WhatsApp / Telegram.';
                 statusDiv.style.color = '#e65100';
             } else if (result.code === 'API_UNAVAILABLE') {
                 statusDiv.innerHTML =
-                    '⚠️ Заказ через сайт работает на <strong>alkodostavka24.vercel.app</strong> или через <code>npm run dev</code> (порт 3000). Сейчас: Live Server без API. Позвоните <a href="tel:+79997863967">+7 (999) 786-39-67</a>.';
+                    '⚠️ Заказ через сайт работает на <strong>alkodostavka24.vercel.app</strong> или через <code>npm run dev</code> (порт 3000). Сейчас: Live Server без API. Позвоните <a href="tel:+79251219972">+7 (925) 121-99-72</a>.';
                 statusDiv.style.color = '#e65100';
             } else if (result.code === 'TELEGRAM_NETWORK') {
                 statusDiv.innerHTML =
-                    '⚠️ Не удалось отправить в Telegram (сеть). Позвоните <a href="tel:+79997863967">+7 (999) 786-39-67</a> или напишите в WhatsApp / Telegram.';
+                    '⚠️ Не удалось отправить в Telegram (сеть). Позвоните <a href="tel:+79251219972">+7 (925) 121-99-72</a> или напишите в WhatsApp / Telegram.';
                 statusDiv.style.color = '#e65100';
             } else {
                 statusDiv.innerHTML =
                     '❌ Ошибка: ' +
                     (result.error || 'Не удалось отправить заказ') +
-                    '. Позвоните <a href="tel:+79997863967">+7 (999) 786-39-67</a>.';
+                    '. Позвоните <a href="tel:+79251219972">+7 (925) 121-99-72</a>.';
                 statusDiv.style.color = '#d32f2f';
             }
         } catch (err) {
             statusDiv.innerHTML =
-                '❌ Ошибка соединения. Позвоните <a href="tel:+79997863967">+7 (999) 786-39-67</a> или напишите в WhatsApp / Telegram.';
+                '❌ Ошибка соединения. Позвоните <a href="tel:+79251219972">+7 (925) 121-99-72</a> или напишите в WhatsApp / Telegram.';
             statusDiv.style.color = '#d32f2f';
         }
     }

@@ -65,7 +65,7 @@ async function createOgImage() {
   <text x="100" y="200" font-family="Arial,sans-serif" font-size="72" font-weight="700" fill="#ffffff">АЛКОдоставка</text>
   <text x="100" y="290" font-family="Arial,sans-serif" font-size="40" fill="#f5f5f5">Доставка алкоголя по Москве 24/7</text>
   <text x="100" y="380" font-family="Arial,sans-serif" font-size="32" fill="#d32f2f">Часто 20–40 мин · от 1000 ₽ · 18+</text>
-  <text x="100" y="480" font-family="Arial,sans-serif" font-size="28" fill="#cccccc">+7 (999) 786-39-67 · WhatsApp · Telegram</text>
+  <text x="100" y="480" font-family="Arial,sans-serif" font-size="28" fill="#cccccc">+7 (925) 121-99-72 · WhatsApp · Telegram</text>
 </svg>`;
 
   const ogPath = path.join(ROOT, 'og-default.jpg');

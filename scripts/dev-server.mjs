@@ -111,7 +111,7 @@ function resolveStatic(urlPath) {
 async function handleApiRoute(req, res, bodyStr, bodyBuffer) {
   const urlPath = (req.url || '').split('?')[0];
 
-  if (urlPath.startsWith('/api/telegram')) {
+  if (urlPath.startsWith('/api/telegram') || urlPath.startsWith('/api/send-telegram')) {
     let body = bodyStr;
     try {
       body = JSON.parse(bodyStr || '{}');
@@ -173,7 +173,7 @@ const server = http.createServer(async (req, res) => {
       for await (const chunk of req) chunks.push(chunk);
       const bodyBuffer = Buffer.concat(chunks);
       const bodyStr = bodyBuffer.toString('utf8');
-      if (req.method === 'GET' && urlPath.startsWith('/api/telegram')) {
+      if (req.method === 'GET' && (urlPath.startsWith('/api/telegram') || urlPath.startsWith('/api/send-telegram'))) {
         return await handleApiRoute(req, res, '{}', bodyBuffer);
       }
       return await handleApiRoute(req, res, bodyStr, bodyBuffer);

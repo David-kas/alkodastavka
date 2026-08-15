@@ -1,5 +1,5 @@
 /**
- * SEO / домен / телефоны: звонки +79997863967, WhatsApp 79626289777 (без текста WA на странице).
+ * SEO / домен / телефоны: звонки +79251219972, WhatsApp 79626289777 (без текста WA на странице).
  * Запуск: node scripts/fix-site-seo.mjs
  */
 import fs from 'fs';
@@ -9,8 +9,8 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
 const BASE = 'https://alkodostavka24.vercel.app';
-const CALL_TEL = '+79997863967';
-const CALL_DISPLAY = '+7 (999) 786-39-67';
+const CALL_TEL = '+79251219972';
+const CALL_DISPLAY = '+7 (925) 121-99-72';
 const WA_PHONE = '79626289777';
 
 const OLD_DOMAINS = [
@@ -47,6 +47,8 @@ function fixPhones(c) {
 
   out = out.replace(/tel:\+79626289777/g, `tel:${CALL_TEL}`);
   out = out.replace(/tel:\+79997863967/g, `tel:${CALL_TEL}`);
+  out = out.replace(/\+7 \(999\) 786-39-67/g, CALL_DISPLAY);
+  out = out.replace(/\+79997863967/g, CALL_TEL.replace('+', '+'));
 
   out = out.replace(/wa\.me\/79997863967/g, `wa.me/${WA_PHONE}`);
   out = out.replace(/wa\.me\/79648489888/g, `wa.me/${WA_PHONE}`);

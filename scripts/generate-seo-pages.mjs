@@ -13,8 +13,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
 const BASE = 'https://alkodostavka24.vercel.app';
 
-const CALL_TEL = '+79997863967';
-const CALL_DISPLAY = '+7 (999) 786-39-67';
+const CALL_TEL = '+79251219972';
+const CALL_DISPLAY = '+7 (925) 121-99-72';
 const WA_PHONE = '79626289777';
 const SEO_CONTACT = 'телефон, WhatsApp, Telegram или форма заявки';
 const LASTMOD = new Date().toISOString().slice(0, 10);
@@ -409,7 +409,7 @@ function headerBlock(activeNav) {
     </nav>
     <div class="header-phone-promo">
       <span class="badge-247">24/7</span>
-      <a href="tel:+79997863967">+7 (999) 786-39-67</a>
+      <a href="tel:+79251219972">+7 (925) 121-99-72</a>
       <span class="phone-sub">Часто 20–40 мин · заказ от 1000 ₽ · МКАД от 650 ₽</span>
     </div>
     <div class="header-cta-cluster">

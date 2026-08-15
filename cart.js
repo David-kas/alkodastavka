@@ -1,6 +1,6 @@
 async function sendTelegramMessage(text, retries) {
     retries = retries === undefined ? 3 : retries;
-    const url = '/api/send-telegram';
+    const url = '/api/telegram';
     for (var attempt = 1; attempt <= retries; attempt++) {
         var controller = new AbortController();
         var timeoutId = setTimeout(function() { controller.abort(); }, 10000);
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchBtn = document.getElementById('search-btn');
     if (searchBtn) {
         searchBtn.addEventListener('click', function() {
-            window.location.href = 'tel:+79997863967';
+            window.location.href = 'tel:+79251219972';
         });
     }
 
