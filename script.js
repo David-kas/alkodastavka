@@ -7,32 +7,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function syncMobileHeaderHeight() {
         if (!siteHeader) return;
-        var mq = window.matchMedia('(max-width: 768px)');
-        if (mq.matches) {
-            requestAnimationFrame(function () {
-                requestAnimationFrame(function () {
-                    document.documentElement.style.setProperty(
-                        '--mobile-header-h',
-                        siteHeader.offsetHeight + 'px',
-                    );
-                });
-            });
-        } else {
-            document.documentElement.style.setProperty('--mobile-header-h', '0px');
-        }
+        if (headerHeightRaf) cancelAnimationFrame(headerHeightRaf);
+        headerHeightRaf = requestAnimationFrame(function () {
+            var mq = window.matchMedia('(max-width: 768px)');
+            document.documentElement.style.setProperty(
+                '--mobile-header-h',
+                mq.matches ? siteHeader.offsetHeight + 'px' : '0px',
+            );
+        });
+    }
+
+    var headerHeightRaf = null;
+    var resizeTimer = null;
+    function onViewportChange() {
+        if (resizeTimer) window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(function () {
+            resizeTimer = null;
+            syncMobileHeaderHeight();
+            syncNavVisibilityForViewport();
+        }, 120);
     }
 
     syncMobileHeaderHeight();
-    window.addEventListener('resize', syncMobileHeaderHeight, { passive: true });
-    window.addEventListener('orientationchange', syncMobileHeaderHeight);
-
-    if (siteHeader) {
-        var onScrollHeader = function () {
-            siteHeader.classList.toggle('is-scrolled', window.scrollY > 48);
-        };
-        onScrollHeader();
-        window.addEventListener('scroll', onScrollHeader, { passive: true });
-    }
+    window.addEventListener('resize', onViewportChange, { passive: true });
+    window.addEventListener('orientationchange', onViewportChange);
 
     var navTransitionEndHandler = null;
     var navVisibilityFallback = null;
@@ -61,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     syncNavVisibilityForViewport();
-    window.addEventListener('resize', syncNavVisibilityForViewport, { passive: true });
 
     function setNavOpen(open) {
         if (!menuBtn || !nav) return;
@@ -220,181 +217,463 @@ document.addEventListener('DOMContentLoaded', function () {
 
     renderRecentWidget();
 
-    const categoryBtns = document.querySelectorAll('.category-btn');
-    const products = document.querySelectorAll('.product-card');
-    if (categoryBtns.length && products.length) {
-        categoryBtns.forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                categoryBtns.forEach(function (b) {
-                    b.classList.remove('active');
-                });
-                btn.classList.add('active');
-                const category = btn.dataset.category;
-                products.forEach(function (product) {
-                    if (category === 'all' || product.dataset.category === category) {
-                        product.style.display = 'block';
-                    } else {
-                        product.style.display = 'none';
-                    }
-                });
-            });
-        });
-    }
+    const forms = document.querySelectorAll('#order-form, #cart-order-form, form[data-telegram-form]');
 
-    function getTelegramApiUrl() {
-        if (location.protocol === 'file:' || /^(localhost|127\.0\.0\.1)$/i.test(location.hostname)) {
-            return 'https://dostavka-alkogolya.pro/api/telegram.php';
+    function readCartItems() {
+        try {
+            var raw = JSON.parse(localStorage.getItem('alko_cart_v1') || '[]');
+            if (!Array.isArray(raw)) return [];
+            return raw
+                .map(function (it) {
+                    if (!it || !it.name) return null;
+                    return {
+                        name: String(it.name).trim(),
+                        price: Math.max(0, parseInt(it.price, 10) || 0),
+                        qty: Math.max(1, parseInt(it.qty, 10) || 1),
+                        image: it.image ? String(it.image) : '',
+                    };
+                })
+                .filter(Boolean);
+        } catch (e) {
+            return [];
         }
-        return '/api/telegram.php';
     }
 
-    function bindCallbackForms() {
-        document.querySelectorAll('.js-callback-form').forEach(function (form) {
-            if (form.dataset.bound === '1') return;
-            form.dataset.bound = '1';
+    async function submitTelegramOrder(form, statusDiv) {
+        if (!statusDiv) return;
 
-            form.addEventListener('submit', async function (e) {
-                e.preventDefault();
-                const statusDiv = form.querySelector('.callback-form-status');
-                const submitBtn = form.querySelector('button[type="submit"]');
-                const nameEl = form.querySelector('[name="name"]');
-                const phoneEl = form.querySelector('[name="phone"]');
-                const commentEl = form.querySelector('[name="comment"]');
+        const nameEl = form.querySelector('[name="name"], #name, #cart-name, #oneclick-name');
+        const phoneEl = form.querySelector('[name="phone"], #phone, #cart-phone, #oneclick-phone');
+        const commentEl = form.querySelector('[name="comment"], #comment, #cart-comment');
+        const addressEl = form.querySelector('[name="address"], #cart-address');
 
-                if (!nameEl || !phoneEl) return;
+        const name = nameEl ? nameEl.value.trim() : '';
+        const phone = phoneEl ? phoneEl.value.trim() : '';
+        const comment = commentEl ? commentEl.value.trim() : '';
+        const address = addressEl ? addressEl.value.trim() : '';
+        const cart = readCartItems();
 
-                const name = nameEl.value.trim();
-                const phone = phoneEl.value.trim();
-                const comment = commentEl ? commentEl.value.trim() : '';
+        if (form.id === 'cart-order-form' && !cart.length) {
+            statusDiv.innerHTML = '⚠️ Добавьте товары в корзину из <a href="/catalog.html">каталога</a>';
+            statusDiv.style.color = '#e65100';
+            return;
+        }
 
-                if (!name || !phone) {
-                    if (statusDiv) {
-                        statusDiv.textContent = 'Укажите имя и телефон';
-                        statusDiv.style.color = '#d32f2f';
-                    }
-                    return;
-                }
+        statusDiv.innerHTML = '⏳ Отправка заказа...';
+        statusDiv.style.color = '#333';
 
-                if (statusDiv) {
-                    statusDiv.textContent = '⏳ Отправка...';
-                    statusDiv.style.color = '#333';
-                }
-                if (submitBtn) {
-                    submitBtn.disabled = true;
-                }
+        const data = {
+            name: name,
+            phone: phone,
+            comment: comment || (form.getAttribute('data-product-quick')
+                ? 'Быстрый заказ: ' + form.getAttribute('data-product-quick')
+                : ''),
+            address: address,
+            cart: cart,
+            source: form.getAttribute('data-source') || 'Сайт АЛКОдоставка',
+            orderType: form.getAttribute('data-order-type') || 'Заявка с сайта',
+            pageUrl: window.location.href,
+        };
 
-                const data = {
-                    name: name,
-                    phone: phone,
-                    comment: comment,
-                    source: form.dataset.source || 'Сайт АлкоДоставка 24',
-                    pageUrl: window.location.href,
-                    submittedAt: new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' }),
-                };
+        try {
+            const apiUrl =
+                (document.documentElement.getAttribute('data-api-base') || '').replace(/\/$/, '') +
+                '/api/telegram';
 
-                try {
-                    const response = await fetch(getTelegramApiUrl(), {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(data),
-                    });
-
-                    const result = await response.json();
-
-                    if (result.success) {
-                        if (statusDiv) {
-                            statusDiv.textContent =
-                                '✅ Заявка отправлена! Перезвоним в течение 5 минут.';
-                            statusDiv.style.color = '#2e7d32';
-                        }
-                        form.reset();
-                    } else if (statusDiv) {
-                        statusDiv.textContent = '❌ Ошибка: ' + (result.error || 'Не удалось отправить');
-                        statusDiv.style.color = '#d32f2f';
-                    }
-                } catch (err) {
-                    if (statusDiv) {
-                        statusDiv.textContent =
-                            '❌ Ошибка сети. Позвоните +7 (999) 786-39-67 или напишите в мессенджер.';
-                        statusDiv.style.color = '#d32f2f';
-                    }
-                } finally {
-                    if (submitBtn) {
-                        submitBtn.disabled = false;
-                    }
-                }
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
             });
-        });
+
+            const contentType = response.headers.get('content-type') || '';
+            let result = {};
+            const rawText = await response.text();
+
+            if (contentType.includes('application/json')) {
+                try {
+                    result = JSON.parse(rawText || '{}');
+                } catch (parseErr) {
+                    result = { error: 'Некорректный ответ сервера' };
+                }
+            } else if (rawText.trim().startsWith('{')) {
+                try {
+                    result = JSON.parse(rawText);
+                } catch (parseErr) {
+                    result = { error: 'Некорректный ответ сервера' };
+                }
+            } else {
+                result = {
+                    error: 'API недоступен на этом сервере',
+                    code: 'API_UNAVAILABLE',
+                    hint: 'local',
+                };
+            }
+
+            if (response.ok && result.success) {
+                statusDiv.innerHTML =
+                    '✅ Заказ отправлен! Мы перезвоним в ближайшее время для подтверждения.';
+                statusDiv.style.color = '#2e7d32';
+                form.reset();
+                if (form.id === 'cart-order-form') {
+                    writeCart([]);
+                    if (typeof closeCartPanel === 'function') closeCartPanel();
+                }
+                if (form.id === 'oneclick-order-form' && typeof closeOneClickModal === 'function') {
+                    window.setTimeout(closeOneClickModal, 2500);
+                }
+            } else if (result.code === 'TELEGRAM_NOT_CONFIGURED') {
+                statusDiv.innerHTML =
+                    '⚠️ Оформление временно недоступно. Позвоните <a href="tel:+79997863967">+7 (999) 786-39-67</a> или напишите в WhatsApp / Telegram.';
+                statusDiv.style.color = '#e65100';
+            } else if (result.code === 'API_UNAVAILABLE') {
+                statusDiv.innerHTML =
+                    '⚠️ Заказ через сайт работает на <strong>alkodostavka24.vercel.app</strong> или через <code>npm run dev</code> (порт 3000). Сейчас: Live Server без API. Позвоните <a href="tel:+79997863967">+7 (999) 786-39-67</a>.';
+                statusDiv.style.color = '#e65100';
+            } else if (result.code === 'TELEGRAM_NETWORK') {
+                statusDiv.innerHTML =
+                    '⚠️ Не удалось отправить в Telegram (сеть). Позвоните <a href="tel:+79997863967">+7 (999) 786-39-67</a> или напишите в WhatsApp / Telegram.';
+                statusDiv.style.color = '#e65100';
+            } else {
+                statusDiv.innerHTML =
+                    '❌ Ошибка: ' +
+                    (result.error || 'Не удалось отправить заказ') +
+                    '. Позвоните <a href="tel:+79997863967">+7 (999) 786-39-67</a>.';
+                statusDiv.style.color = '#d32f2f';
+            }
+        } catch (err) {
+            statusDiv.innerHTML =
+                '❌ Ошибка соединения. Позвоните <a href="tel:+79997863967">+7 (999) 786-39-67</a> или напишите в WhatsApp / Telegram.';
+            statusDiv.style.color = '#d32f2f';
+        }
     }
 
-    bindCallbackForms();
-
-    document.querySelectorAll('[data-scroll-to-callback]').forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-            const target = document.getElementById('callback-form-block');
-            if (!target) return;
+    forms.forEach(function (form) {
+        if (form.tagName !== 'FORM') return;
+        form.addEventListener('submit', async function (e) {
             e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            const nameInput = target.querySelector('[name="name"]');
-            if (nameInput) {
-                setTimeout(function () {
-                    nameInput.focus();
-                }, 400);
-            }
+            const statusDiv =
+                form.querySelector('[data-order-status]') ||
+                document.getElementById('order-status') ||
+                document.getElementById('cart-order-status') ||
+                document.getElementById('oneclick-status');
+            await submitTelegramOrder(form, statusDiv);
         });
     });
-
-    const legacyForm = document.getElementById('feedback-form');
-    if (legacyForm && !legacyForm.classList.contains('js-callback-form')) {
-        legacyForm.classList.add('js-callback-form');
-        if (!legacyForm.querySelector('.callback-form-status') && document.getElementById('order-status')) {
-            document.getElementById('order-status').classList.add('callback-form-status');
-        }
-        const legacyName = document.getElementById('name');
-        const legacyPhone = document.getElementById('phone');
-        const legacyComment = document.getElementById('comment');
-        if (legacyName) legacyName.setAttribute('name', 'name');
-        if (legacyPhone) legacyPhone.setAttribute('name', 'phone');
-        if (legacyComment) legacyComment.setAttribute('name', 'comment');
-        bindCallbackForms();
-    }
 
     document.querySelectorAll('.accordion-header').forEach(function (header) {
         header.addEventListener('click', function () {
-            const parentItem = header.closest('.accordion-item');
-            if (!parentItem) return;
-            const content = parentItem.querySelector('.accordion-content');
-            const isOpening = !parentItem.classList.contains('active');
-            parentItem.classList.toggle('active');
-            if (header.setAttribute) {
-                header.setAttribute('aria-expanded', isOpening ? 'true' : 'false');
-            }
-            if (content) {
-                if (isOpening) {
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                } else {
-                    content.style.maxHeight = '0';
-                }
-            }
+            const parentItem = header.parentElement;
+            if (parentItem) parentItem.classList.toggle('active');
         });
     });
 
-    window.addEventListener(
-        'resize',
-        function () {
-            const panel = document.getElementById('seo-story-panel');
-            if (!panel || !panel.classList.contains('active')) return;
-            const content = panel.querySelector('.accordion-content');
-            if (content) content.style.maxHeight = content.scrollHeight + 'px';
-        },
-        { passive: true }
-    );
+    /* ===== Заказ в один клик ===== */
+    var closeOneClickModal = function () {};
+    var openOneClickModal = function () {};
 
-    if (!document.getElementById('cart-panel') && !document.querySelector('aside.cart')) {
-        var cartScript = document.createElement('script');
-        cartScript.src = '/site-cart.js';
-        cartScript.defer = true;
-        document.head.appendChild(cartScript);
+    (function initOneClickOrder() {
+        var backdrop = document.getElementById('oneclick-backdrop');
+        var modal = document.getElementById('oneclick-modal');
+        if (!modal || !backdrop) return;
+
+        openOneClickModal = function (productName) {
+            backdrop.hidden = false;
+            modal.hidden = false;
+            document.body.classList.add('oneclick-open');
+            var status = document.getElementById('oneclick-status');
+            if (status) status.textContent = '';
+            var form = document.getElementById('oneclick-order-form');
+            if (form) {
+                if (productName) {
+                    form.setAttribute('data-product-quick', productName);
+                    form.setAttribute('data-order-type', '⚡ Быстрый заказ: ' + productName);
+                } else {
+                    form.removeAttribute('data-product-quick');
+                    form.setAttribute('data-order-type', '⚡ Заказ в один клик');
+                }
+            }
+            var nameInput = document.getElementById('oneclick-name');
+            if (nameInput) window.setTimeout(function () { nameInput.focus(); }, 80);
+        };
+
+        closeOneClickModal = function () {
+            backdrop.hidden = true;
+            modal.hidden = true;
+            document.body.classList.remove('oneclick-open');
+        };
+
+        document.querySelectorAll('.js-oneclick-open').forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                openOneClickModal();
+            });
+        });
+
+        var closeBtn = document.getElementById('oneclick-close');
+        if (closeBtn) closeBtn.addEventListener('click', closeOneClickModal);
+        backdrop.addEventListener('click', closeOneClickModal);
+
+        if (!document.documentElement.dataset.oneclickEscBound) {
+            document.documentElement.dataset.oneclickEscBound = '1';
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !modal.hidden) closeOneClickModal();
+            });
+        }
+
+        window.alkoOpenOneClickModal = openOneClickModal;
+    })();
+
+    /* ===== Корзина ===== */
+    var CART_KEY = 'alko_cart_v1';
+    var closeCartPanel = function () {};
+
+    function readCart() {
+        return readCartItems();
+    }
+
+    function writeCart(items) {
+        localStorage.setItem(CART_KEY, JSON.stringify(items));
+        updateCartUi();
+    }
+
+    function parsePrice(text) {
+        return parseInt(String(text || '').replace(/\D/g, ''), 10) || 0;
+    }
+
+    function formatRub(n) {
+        return (Number(n) || 0).toLocaleString('ru-RU') + ' ₽';
+    }
+
+    function cartSummaryText(items) {
+        if (!items.length) return '';
+        var lines = items.map(function (it) {
+            return it.name + ' × ' + it.qty + ' — ' + formatRub(it.price * it.qty);
+        });
+        var total = items.reduce(function (s, it) {
+            return s + it.price * it.qty;
+        }, 0);
+        lines.push('Итого: ' + formatRub(total));
+        return lines.join('\n');
+    }
+
+    function escapeHtml(str) {
+        return String(str || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    function addToCart(name, price, image) {
+        if (!name || !price) return;
+        var items = readCart();
+        var found = items.find(function (it) {
+            return it.name === name;
+        });
+        if (found) {
+            found.qty += 1;
+        } else {
+            items.push({ name: name, price: price, qty: 1, image: image || '' });
+        }
+        writeCart(items);
+        pulseCartBadge();
+    }
+
+    window.alkoAddToCart = addToCart;
+    window.alkoParsePrice = parsePrice;
+
+    function pulseCartBadge() {
+        var btn = document.getElementById('site-cart-btn');
+        if (!btn) return;
+        btn.classList.add('cart-pulse');
+        window.setTimeout(function () {
+            btn.classList.remove('cart-pulse');
+        }, 450);
+    }
+
+    function removeFromCart(name) {
+        writeCart(
+            readCart().filter(function (it) {
+                return it.name !== name;
+            }),
+        );
+    }
+
+    function changeQty(name, delta) {
+        var items = readCart();
+        items = items
+            .map(function (it) {
+                if (it.name !== name) return it;
+                return Object.assign({}, it, { qty: it.qty + delta });
+            })
+            .filter(function (it) {
+                return it.qty > 0;
+            });
+        writeCart(items);
+    }
+
+    function initCart() {
+        var btn = document.getElementById('site-cart-btn');
+        var panel = document.getElementById('cart-panel');
+        var backdrop = document.getElementById('cart-backdrop');
+
+        if (!panel || !backdrop) return;
+
+        function openCart() {
+            panel.hidden = false;
+            backdrop.hidden = false;
+            body.classList.add('cart-open');
+            body.style.overflow = 'hidden';
+            updateCartUi();
+        }
+
+        closeCartPanel = function () {
+            panel.hidden = true;
+            backdrop.hidden = true;
+            body.classList.remove('cart-open');
+            if (!body.classList.contains('nav-open')) body.style.overflow = '';
+        };
+
+        if (btn && !btn.dataset.cartBound) {
+            btn.dataset.cartBound = '1';
+            btn.addEventListener('click', openCart);
+        }
+
+        var closeBtn = document.getElementById('cart-panel-close');
+        if (closeBtn && !closeBtn.dataset.cartBound) {
+            closeBtn.dataset.cartBound = '1';
+            closeBtn.addEventListener('click', closeCartPanel);
+        }
+
+        if (!backdrop.dataset.cartBound) {
+            backdrop.dataset.cartBound = '1';
+            backdrop.addEventListener('click', closeCartPanel);
+        }
+
+        var clearBtn = document.getElementById('cart-clear');
+        if (clearBtn && !clearBtn.dataset.cartBound) {
+            clearBtn.dataset.cartBound = '1';
+            clearBtn.addEventListener('click', function () {
+                writeCart([]);
+            });
+        }
+
+        if (!document.documentElement.dataset.cartEscBound) {
+            document.documentElement.dataset.cartEscBound = '1';
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && panel && !panel.hidden) closeCartPanel();
+            });
+        }
+
+        updateCartUi();
+    }
+
+    function renderCartPanel(items) {
+        var list = document.getElementById('cart-items');
+        var totalEl = document.getElementById('cart-total');
+        var countEl = document.getElementById('cart-items-count');
+        var emptyState = document.getElementById('cart-empty-state');
+        var footer = document.getElementById('cart-panel-footer');
+        if (!list || !totalEl) return;
+
+        var total = 0;
+        var count = 0;
+        list.innerHTML = '';
+
+        items.forEach(function (it) {
+            var qty = Math.max(1, parseInt(it.qty, 10) || 1);
+            var price = Math.max(0, parseInt(it.price, 10) || 0);
+            total += price * qty;
+            count += qty;
+        });
+
+        if (!items.length) {
+            if (emptyState) emptyState.hidden = false;
+            if (footer) footer.classList.add('cart-panel-footer--empty');
+        } else {
+            if (emptyState) emptyState.hidden = true;
+            if (footer) footer.classList.remove('cart-panel-footer--empty');
+            items.forEach(function (it) {
+                var qty = Math.max(1, parseInt(it.qty, 10) || 1);
+                var price = Math.max(0, parseInt(it.price, 10) || 0);
+                var li = document.createElement('li');
+                li.className = 'cart-item';
+                var thumb = it.image
+                    ? '<img src="' + escapeHtml(it.image) + '" alt="" loading="lazy" decoding="async" width="64" height="64">'
+                    : '<span class="cart-item-thumb-fallback" aria-hidden="true">🍾</span>';
+                li.innerHTML =
+                    '<div class="cart-item-thumb">' +
+                    thumb +
+                    '</div>' +
+                    '<div class="cart-item-body">' +
+                    '<p class="cart-item-name">' +
+                    escapeHtml(it.name) +
+                    '</p>' +
+                    '<p class="cart-item-unit">' +
+                    formatRub(price) +
+                    ' / шт.</p>' +
+                    '<div class="cart-item-controls">' +
+                    '<div class="cart-item-qty">' +
+                    '<button type="button" class="cart-qty-btn" data-cart-minus="' +
+                    encodeURIComponent(it.name) +
+                    '" aria-label="Уменьшить">−</button>' +
+                    '<span class="cart-qty-value">' +
+                    qty +
+                    '</span>' +
+                    '<button type="button" class="cart-qty-btn" data-cart-plus="' +
+                    encodeURIComponent(it.name) +
+                    '" aria-label="Увеличить">+</button>' +
+                    '</div>' +
+                    '<span class="cart-item-price">' +
+                    formatRub(price * qty) +
+                    '</span>' +
+                    '</div>' +
+                    '</div>' +
+                    '<button type="button" class="cart-remove" data-cart-remove="' +
+                    encodeURIComponent(it.name) +
+                    '" aria-label="Удалить">×</button>';
+                list.appendChild(li);
+            });
+        }
+
+        totalEl.textContent = formatRub(total);
+        if (countEl) countEl.textContent = String(count);
+
+        var badge = document.getElementById('cart-count');
+        if (badge) {
+            badge.textContent = String(count || 0);
+            badge.hidden = !count;
+        }
+
+        list.querySelectorAll('[data-cart-minus]').forEach(function (b) {
+            b.addEventListener('click', function () {
+                changeQty(decodeURIComponent(b.getAttribute('data-cart-minus')), -1);
+            });
+        });
+        list.querySelectorAll('[data-cart-plus]').forEach(function (b) {
+            b.addEventListener('click', function () {
+                changeQty(decodeURIComponent(b.getAttribute('data-cart-plus')), 1);
+            });
+        });
+        list.querySelectorAll('[data-cart-remove]').forEach(function (b) {
+            b.addEventListener('click', function () {
+                removeFromCart(decodeURIComponent(b.getAttribute('data-cart-remove')));
+            });
+        });
+    }
+
+    function updateCartUi() {
+        renderCartPanel(readCart());
+    }
+
+    initCart();
+
+    var commentField = document.querySelector('#order-form [name="comment"], #comment');
+    if (commentField && !commentField.value.trim()) {
+        var cartItems = readCart();
+        if (cartItems.length) {
+            commentField.value = cartSummaryText(cartItems) + '\n\nАдрес доставки: ';
+        }
     }
 });
-
