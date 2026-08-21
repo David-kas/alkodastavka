@@ -9,6 +9,30 @@
   },
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "alkodastavka.vercel.app" }
+      ],
+      "destination": "https://alkodostavka24.online/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "alkodostavka.vercel.app" }
+      ],
+      "destination": "https://alkodostavka24.online/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "alkodostavka24.vercel.app" }
+      ],
+      "destination": "https://alkodostavka24.online/:path*",
+      "permanent": true
+    },
+    {
       "source": "/korporativ.html",
       "destination": "/povod/korporativ/",
       "permanent": true
