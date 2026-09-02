@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
-const BASE = 'https://alkodostavka24.vercel.app';
+const BASE = 'https://alkodastavka.vercel.app';
 const CALL_TEL = '+79251219972';
 const CALL_DISPLAY = '+7 (925) 121-99-72';
 const WA_PHONE = '79626289777';

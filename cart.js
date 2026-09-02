@@ -1,6 +1,6 @@
 async function sendTelegramMessage(text, retries) {
     retries = retries === undefined ? 3 : retries;
-    const url = '/api/telegram';
+    const url = '/api/telegram.php';
     for (var attempt = 1; attempt <= retries; attempt++) {
         var controller = new AbortController();
         var timeoutId = setTimeout(function() { controller.abort(); }, 10000);

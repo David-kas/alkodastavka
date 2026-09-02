@@ -13,23 +13,23 @@
       "has": [
         { "type": "host", "value": "alkodastavka.vercel.app" }
       ],
-      "destination": "https://alkodostavka24.online/:path*",
+      "destination": "https://alkodastavka.vercel.app/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
       "has": [
-        { "type": "host", "value": "alkodostavka.vercel.app" }
+        { "type": "host", "value": "alkodastavka.vercel.app" }
       ],
-      "destination": "https://alkodostavka24.online/:path*",
+      "destination": "https://alkodastavka.vercel.app/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
       "has": [
-        { "type": "host", "value": "alkodostavka24.vercel.app" }
+        { "type": "host", "value": "alkodastavka.vercel.app" }
       ],
-      "destination": "https://alkodostavka24.online/:path*",
+      "destination": "https://alkodastavka.vercel.app/:path*",
       "permanent": true
     },
     {

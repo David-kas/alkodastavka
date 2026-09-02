@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
-const SITE = 'https://alkodostavka24.vercel.app';
+const SITE = 'https://alkodastavka.vercel.app';
 const CATALOG = path.join(ROOT, 'catalog.html');
 
 const CATEGORY_KEYWORDS = {

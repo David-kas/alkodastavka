@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             const apiUrl =
                 (document.documentElement.getAttribute('data-api-base') || '').replace(/\/$/, '') +
-                '/api/telegram';
+                '/api/telegram.php';
 
             const response = await fetch(apiUrl, {
                 method: 'POST',
@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 statusDiv.style.color = '#e65100';
             } else if (result.code === 'API_UNAVAILABLE') {
                 statusDiv.innerHTML =
-                    '⚠️ Заказ через сайт работает на <strong>alkodostavka24.vercel.app</strong> или через <code>npm run dev</code> (порт 3000). Сейчас: Live Server без API. Позвоните <a href="tel:+79251219972">+7 (925) 121-99-72</a>.';
+                    '⚠️ Заказ через сайт работает на <strong>alkodastavka.vercel.app</strong> или через <code>npm run dev</code> (порт 3000). Сейчас: Live Server без API. Позвоните <a href="tel:+79251219972">+7 (925) 121-99-72</a>.';
                 statusDiv.style.color = '#e65100';
             } else if (result.code === 'TELEGRAM_NETWORK') {
                 statusDiv.innerHTML =
