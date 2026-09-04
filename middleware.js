@@ -2,22 +2,8 @@ export const config = {
   runtime: 'edge',
 };
 
-const NEW_ORIGIN = 'https://alkodastavka.vercel.app';
-const OLD_HOSTS = new Set([
-  'alkodastavka.vercel.app',
-  'alkodastavka.vercel.app',
-  'alkodastavka.vercel.app',
-]);
-
 export default function middleware(request) {
   const url = new URL(request.url);
-  const host = (url.hostname || '').toLowerCase();
-
-  if (OLD_HOSTS.has(host)) {
-    const target = new URL(url.pathname + url.search, NEW_ORIGIN);
-    return Response.redirect(target.toString(), 301);
-  }
-
   const userAgent = request.headers.get('user-agent') || '';
 
   // Пропускаем статику и API без проверки
@@ -50,7 +36,8 @@ export default function middleware(request) {
 
   const isBot = botPattern.test(userAgent);
 
-  // Блокируем только пользователей с ПК, которые не являются ботами
+  // Блокируем только пользователей с ПК, которые не являются ботами.
+  // Эту защиту намеренно сохраняем.
   if (!isMobile && !isBot) {
     return new Response(
       '<html><body><h1>Доступ с ПК ограничен</h1><p>Сайт открыт только для мобильных устройств.</p></body></html>',
