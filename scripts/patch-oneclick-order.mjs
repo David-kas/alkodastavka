@@ -1,5 +1,5 @@
 /**
- * Удаляет круглые WA/TG, добавляет модалку «Заказ 1 клик», переключает кнопки.
+ * Обновляет модалку «Заказ 1 клик» и переключает кнопки на её открытие.
  * Запуск: node scripts/patch-oneclick-order.mjs
  */
 import fs from 'fs';
@@ -29,11 +29,19 @@ function stripFloatingMessengers(html) {
 }
 
 function ensureModal(html) {
-  if (html.includes('id="oneclick-modal"')) return html;
   const scriptTag = '<script src="/script.js"';
-  const idx = html.indexOf(scriptTag);
-  if (idx !== -1) {
-    return html.slice(0, idx) + ONECLICK_MODAL_HTML + '\n' + html.slice(idx);
+  const scriptIdx = html.indexOf(scriptTag);
+  const modalStart = html.indexOf('<div id="oneclick-backdrop"');
+
+  // Если старая модалка уже есть — полностью заменяем её новой версией.
+  // Она находится непосредственно перед подключением script.js.
+  if (modalStart !== -1 && scriptIdx !== -1 && modalStart < scriptIdx) {
+    return html.slice(0, modalStart) + ONECLICK_MODAL_HTML + '\n' + html.slice(scriptIdx);
+  }
+
+  if (modalStart !== -1) return html;
+  if (scriptIdx !== -1) {
+    return html.slice(0, scriptIdx) + ONECLICK_MODAL_HTML + '\n' + html.slice(scriptIdx);
   }
   return html.replace('</body>', ONECLICK_MODAL_HTML + '\n</body>');
 }
