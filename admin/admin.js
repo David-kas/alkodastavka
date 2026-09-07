@@ -254,7 +254,7 @@
     try {
       if (!isLocalDev() && serverStatus && !serverStatus.canSave) {
         throw new Error(
-          'На alkodostavka24.online сохранение не работает без Blob Storage. Запустите npm run dev и откройте http://127.0.0.1:3000/admin/'
+          'На alkodastavka.vercel.app сохранение не работает без Blob Storage. Запустите npm run dev и откройте http://127.0.0.1:3000/admin/'
         );
       }
 
@@ -328,86 +328,71 @@
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Ошибка входа');
-      setToken(data.token);
+      setToken(data.token || '');
       showApp(true);
-      loadServerStatus();
       await loadCatalog();
-    } catch (err) {
-      errEl.textContent = err.message;
+      await loadServerStatus();
+    } catch (e) {
+      errEl.textContent = e.message;
       errEl.hidden = false;
     } finally {
-      setBtnLoading(submitBtn, false, 'Войти');
+      setBtnLoading(submitBtn, false);
     }
   });
 
-  $('#btn-logout').addEventListener('click', function () {
-    setToken('');
-    showApp(false);
-    $('#login-password').value = '';
-  });
-
-  $('#btn-add').addEventListener('click', function () {
-    openEdit(-1);
-  });
-
-  $('#btn-save').addEventListener('click', saveCatalog);
-
-  $('#btn-export').addEventListener('click', function () {
-    downloadCatalogJson();
-    setStatus('Файл catalog.json скачан', 'ok');
-  });
-
-  $('#search').addEventListener('input', renderTable);
-  $('#filter-category').addEventListener('change', renderTable);
-  $('#filter-outstock').addEventListener('change', renderTable);
-
-  $('#edit-image').addEventListener('input', updatePreview);
-
-  $('#edit-upload').addEventListener('change', async function () {
+  $('#btn-save')?.addEventListener('click', saveCatalog);
+  $('#btn-cancel-edit')?.addEventListener('click', closeEdit);
+  $('#edit-image')?.addEventListener('input', updatePreview);
+  $('#btn-upload-image')?.addEventListener('change', async function () {
     const file = this.files && this.files[0];
     if (!file) return;
-    setStatus('Загрузка фото…');
     try {
+      setStatus('Загрузка изображения…');
       const path = await uploadImage(file);
       $('#edit-image').value = path;
       updatePreview();
-      setStatus('Фото загружено: ' + path, 'ok');
+      setStatus('Изображение загружено', 'ok');
     } catch (e) {
       setStatus('Ошибка загрузки: ' + e.message, 'err');
+    } finally {
+      this.value = '';
     }
-    this.value = '';
   });
 
-  $('#edit-form').addEventListener('submit', function (e) {
+  $('#btn-new')?.addEventListener('click', function () {
+    openEdit(-1);
+  });
+
+  $('#edit-form')?.addEventListener('submit', function (e) {
     e.preventDefault();
-    const item = {
-      id: $('#edit-id').value || makeId($('#edit-name').value),
+    const p = {
+      id: $('#edit-id').value.trim() || makeId($('#edit-name').value),
       name: $('#edit-name').value.trim(),
       category: $('#edit-category').value,
-      price: parseInt($('#edit-price').value, 10) || 0,
+      price: Number($('#edit-price').value) || 0,
       desc: $('#edit-desc').value.trim(),
-      alt: $('#edit-alt').value.trim() || $('#edit-name').value.trim(),
+      alt: $('#edit-alt').value.trim(),
       image: $('#edit-image').value.trim(),
       inStock: $('#edit-instock').checked,
     };
-    if (!item.name) return;
-    if (editIndex >= 0) products[editIndex] = item;
-    else products.push(item);
-    closeEdit();
+    if (!p.name) {
+      setStatus('Укажите название товара', 'err');
+      return;
+    }
+    if (editIndex >= 0) products[editIndex] = p;
+    else products.unshift(p);
     renderTable();
-    setStatus('Изменения применены. Нажмите «Сохранить на сайт».', 'ok');
+    closeEdit();
+    setStatus('Изменения подготовлены. Нажмите «Сохранить на сайт».', 'ok');
   });
 
-  document.querySelectorAll('[data-close-modal]').forEach(function (el) {
-    el.addEventListener('click', closeEdit);
-  });
-
-  if (token()) {
-    showApp(true);
-    loadServerStatus();
-    loadCatalog();
-  } else {
+  $('#search')?.addEventListener('input', renderTable);
+  $('#filter-category')?.addEventListener('change', renderTable);
+  $('#filter-outstock')?.addEventListener('change', renderTable);
+  $('#btn-logout')?.addEventListener('click', function () {
+    setToken('');
     showApp(false);
-    loadServerStatus();
-  }
+  });
+
+  showApp(false);
 })();
