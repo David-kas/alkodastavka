@@ -1,5 +1,5 @@
 /**
- * PageSpeed: async CSS, min assets, отложенная Метрика, catalog.js только в каталоге.
+ * PageSpeed: render-blocking CSS, min assets, отложенная Метрика, catalog.js только в каталоге.
  * Запуск: node scripts/patch-performance.mjs
  */
 import fs from 'fs';
@@ -9,8 +9,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
 
-const ASYNC_CSS = `<link rel="preload" href="/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/style.min.css"></noscript>`;
+const BLOCKING_CSS = `<link rel="stylesheet" href="/style.min.css">`;
 
 const DEFER_METRIKA = `<script>
         function loadMetrika(){if(window.__alkoMetrikaLoaded)return;window.__alkoMetrikaLoaded=1;
@@ -43,15 +42,16 @@ for (const fp of walk(ROOT)) {
   const before = html;
   const isCatalog = /catalog\.html$/i.test(fp) || fp.endsWith('catalog.html');
 
+  // Keep CSS in the initial render path to prevent a flash of unstyled content and CLS.
   html = html.replace(
-    /<link rel="preload" href="\/style\.css" as="style">\s*<link rel="stylesheet" href="\/style\.css">/g,
-    ASYNC_CSS,
+    /<link rel="preload" href="\/style(?:\.min)?\.css" as="style" onload="[^"]*">\s*<noscript><link rel="stylesheet" href="\/style(?:\.min)?\.css"><\/noscript>/g,
+    BLOCKING_CSS,
   );
   html = html.replace(
-    /<link rel="preload" href="\/style\.min\.css" as="style">\s*<link rel="stylesheet" href="\/style\.min\.css">/g,
-    ASYNC_CSS,
+    /<link rel="preload" href="\/style(?:\.min)?\.css" as="style">\s*<link rel="stylesheet" href="\/style(?:\.min)?\.css">/g,
+    BLOCKING_CSS,
   );
-  html = html.replace(/<link rel="stylesheet" href="\/style\.css">/g, ASYNC_CSS);
+  html = html.replace(/<link rel="stylesheet" href="\/style\.css">/g, BLOCKING_CSS);
 
   html = html.replace(/<script src="\/script\.js" defer><\/script>/g, '<script src="/script.min.js" defer></script>');
   html = html.replace(/<script src="\/script\.min\.js" defer><\/script>\s*<script src="\/script\.catalog\.min\.js" defer><\/script>/g, '<script src="/script.min.js" defer></script>');
