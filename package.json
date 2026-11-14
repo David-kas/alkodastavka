@@ -21,7 +21,10 @@
     "catalog:render": "node scripts/render-catalog-html.mjs",
     "seed:blob": "node scripts/seed-blob-catalog.mjs",
     "perf": "npm run build:assets && npm run patch:perf",
-    "site:audit": "node scripts/site-audit.mjs"
+    "site:audit": "node scripts/site-audit.mjs",
+    "rebuild:sitemap": "node scripts/rebuild-sitemap.mjs",
+    "remove:ratings": "node scripts/remove-unverified-ratings.mjs",
+    "yandex:validate": "node scripts/yandex-seo-validate.mjs"
   },
   "devDependencies": {
     "clean-css": "^5.3.3",

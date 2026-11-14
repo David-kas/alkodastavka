@@ -1,4 +1,4 @@
-# dostavka-alkogolya.pro — боты и мобильные: доступ; ПК: 403
+# alkodastavka.vercel.app — боты и мобильные: доступ; ПК: 403
 # Apache 2.4+ (mod_rewrite, mod_expires, mod_headers)
 
 # --- Кеш статики (PageSpeed) ---

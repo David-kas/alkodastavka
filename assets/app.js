@@ -236,7 +236,7 @@
                 btn.textContent = 'Отправка...';
             }
             try {
-                var res = await fetch('/api/telegram', {
+                var res = await fetch('/api/telegram.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ message: text }),

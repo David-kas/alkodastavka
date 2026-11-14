@@ -4,6 +4,6 @@
  * Прямой доступ закрыт через api/.htaccess
  */
 return [
-    'bot_token' => '8427344243:AAFiXfheHb9HmRa2K5MwJR4o7fjXzGRIPa4',
-    'chat_id' => '562345561',
+    'bot_token' => getenv('TELEGRAM_BOT_TOKEN') ?: '',
+    'chat_id' => getenv('TELEGRAM_CHAT_ID') ?: '',
 ];

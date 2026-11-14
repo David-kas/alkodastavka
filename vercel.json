@@ -9,8 +9,71 @@
   },
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "alkodostavka24.online" }],
+      "destination": "https://alkodastavka.vercel.app/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.alkodostavka24.online" }],
+      "destination": "https://alkodastavka.vercel.app/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "dostavka-alkogolya-24.vercel.app" }],
+      "destination": "https://alkodastavka.vercel.app/:path*",
+      "permanent": true
+    },
+    {
       "source": "/korporativ.html",
       "destination": "/povod/korporativ/",
+      "permanent": true
+    },
+    {
+      "source": "/vodka.html",
+      "destination": "/kategoria/vodka/",
+      "permanent": true
+    },
+    {
+      "source": "/viski.html",
+      "destination": "/kategoria/viski/",
+      "permanent": true
+    },
+    {
+      "source": "/vino.html",
+      "destination": "/kategoria/vino/",
+      "permanent": true
+    },
+    {
+      "source": "/konyak.html",
+      "destination": "/kategoria/konyak/",
+      "permanent": true
+    },
+    {
+      "source": "/pivo.html",
+      "destination": "/kategoria/pivo/",
+      "permanent": true
+    },
+    {
+      "source": "/shampanskoe.html",
+      "destination": "/kategoria/igristoe/",
+      "permanent": true
+    },
+    {
+      "source": "/city-moskva.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/dostavka.html",
+      "destination": "/delivery/",
+      "permanent": true
+    },
+    {
+      "source": "/product/128-%D0%B2%D0%B8%D0%BD%D0%BE-%D0%B8%D0%B3%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B5-inkerman-rose-%D0%BF%D0%BE%D0%BB%D1%83%D1%81%D0%BB%D0%B0%D0%B4%D0%BA%D0%BE%D0%B5-0-75-%D0%BB%D0%B8%D1%82%D1%80%D0%B0.html",
+      "destination": "/product/20-%D0%B2%D0%B8%D0%BD%D0%BE-%D0%B8%D0%B3%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B5-inkerman-rose-%D0%BF%D0%BE%D0%BB%D1%83%D1%81%D0%BB%D0%B0%D0%B4%D0%BA%D0%BE%D0%B5-0-75-%D0%BB%D0%B8%D1%82%D1%80%D0%B0.html",
       "permanent": true
     }
   ],

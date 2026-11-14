@@ -2,8 +2,33 @@ export const config = {
   runtime: 'edge',
 };
 
+const PRIMARY_HOST = 'alkodastavka.vercel.app';
+const LEGACY_HOSTS = new Set([
+  'alkodostavka24.online',
+  'www.alkodostavka24.online',
+  'alkodostavka24.vercel.app',
+  'dostavka-alkogolya-24.vercel.app',
+]);
+
 export default function middleware(request) {
   const url = new URL(request.url);
+  const host = (request.headers.get('host') || url.host).split(':')[0].toLowerCase();
+
+  // Единое главное зеркало: все старые адреса переводим 301 на
+  // соответствующий URL нового сайта, сохраняя путь и query string.
+  // Это важно для Яндекса при переезде домена и для переноса веса
+  // внутренних страниц, а не только главной.
+  if (LEGACY_HOSTS.has(host)) {
+    const target = new URL(url.pathname + url.search, `https://${PRIMARY_HOST}`);
+    return new Response(null, {
+      status: 301,
+      headers: {
+        Location: target.toString(),
+        'Cache-Control': 'public, max-age=3600',
+      },
+    });
+  }
+
   const userAgent = request.headers.get('user-agent') || '';
 
   // Пропускаем статику и API без проверки
@@ -36,7 +61,8 @@ export default function middleware(request) {
 
   const isBot = botPattern.test(userAgent);
 
-  // Блокируем только пользователей с ПК, которые не являются ботами
+  // Блокируем только пользователей с ПК, которые не являются ботами.
+  // Эту защиту намеренно сохраняем.
   if (!isMobile && !isBot) {
     return new Response(
       '<html><body><h1>Доступ с ПК ограничен</h1><p>Сайт открыт только для мобильных устройств.</p></body></html>',

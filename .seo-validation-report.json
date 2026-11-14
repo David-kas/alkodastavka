@@ -1,0 +1,21 @@
+{
+  "checkedHtml": 464,
+  "sitemapUrlCount": 450,
+  "sitemapProductUrls": 138,
+  "jsonLdOk": 419,
+  "jsonLdBad": 0,
+  "missingCanonical": 4,
+  "missingCanonicalFiles": [
+    "content/home-seo-story.html",
+    "google53d0d0c99f9b7a6e (8).html",
+    "google53d0d0c99f9b7a6e.html",
+    "tmp-vodka.html"
+  ],
+  "canonicalOffDomain": 0,
+  "aggregateRatingLeft": 0,
+  "duplicateTitleCount": 0,
+  "duplicateTitlesSample": [],
+  "brokenLocalLinks": [],
+  "brokenLocalLinkCount": 0,
+  "noindexPages": 0
+}

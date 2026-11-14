@@ -138,7 +138,6 @@ const products = [
     { id: 125, name: 'ШАМПАНСКОЕ РОССИЙСКОЕ белое полусладкое (РОССИЯ) 0,75 ЛИТРА', price: 790, category: 'shampanskoe', inStock: true, image: '/photo/125.jpg' },
     { id: 126, name: 'Вино игристое Риондо Просекко Фризанте белое сухое 0,75 л', price: 1690, category: 'shampanskoe', inStock: true, image: '/photo/126.jpg' },
     { id: 127, name: 'ШАМПАНСКОЕ Gancia Prosecco (ИТАЛИЯ) 0,7 ЛИТРА', price: 2390, category: 'shampanskoe', inStock: true, image: '/photo/127.jpg' },
-    { id: 128, name: 'ВИНО ИГРИСТОЕ INKERMAN ROSE полусладкое 0,75 ЛИТРА', price: 1490, category: 'shampanskoe', inStock: true, image: '/photo/128.jpg' },
     { id: 129, name: 'ШАМПАНСКОЕ ASTI MONDORO DOCG белое сладкое (ИТАЛИЯ) 0,75 ЛИТРА', price: 2390, category: 'shampanskoe', inStock: true, image: '/photo/129.jpg' },
     { id: 130, name: 'ШАМПАНСКОЕ АБРАУ ДЮРСО полусладкое (РОССИЯ) 0,75 ЛИТРА', price: 1149, category: 'shampanskoe', inStock: true, image: '/photo/130.jpg' },
     { id: 131, name: 'ШАМПАНСКОЕ MONDORO BRUT (ИТАЛИЯ) 0,75 ЛИТРА', price: 2390, category: 'shampanskoe', inStock: true, image: '/photo/131.jpg' },

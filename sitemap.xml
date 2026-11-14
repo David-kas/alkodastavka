@@ -2,1640 +2,2702 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://alkodastavka.vercel.app/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alkodastavka.vercel.app/about.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/blog-chem-otlichaetsya-rom.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/blog-kak-vybrat-viski.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/blog.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alkodastavka.vercel.app/catalog.html</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alkodastavka.vercel.app/contacts.html</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alkodastavka.vercel.app/dostavka-butovo.html</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://alkodastavka.vercel.app/dostavka-chertanovo.html</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://alkodastavka.vercel.app/dostavka-nochyu-moskva.html</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://alkodastavka.vercel.app/faq.html</loc>
-    <lastmod>2026-07-01</lastmod>
+    <loc>https://alkodastavka.vercel.app/catalog/</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/city-kazan.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/city-sankt-peterburg.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/contacts.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/contacts/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/dostavka-butovo.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/dostavka-chertanovo.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/dostavka-nochyu-moskva.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/dzhin.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/dzhin/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/faq.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/faq/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/kategoria/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/kategoria/igristoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/kategoria/konyak/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/kategoria/pivo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/kategoria/vino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/kategoria/viski/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/kategoria/vodka/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/kategoria/zakuski/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/konyak.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/konyak/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/korporativ.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/landing-pivo.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/landing-viski.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/landing-vodka.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/liker.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/liker/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/aeroport/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/alekseevskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/alma-atinskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/altufevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/annino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/aviamotornaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/avtozavodskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/babushkinskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/baumanskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/belorusskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/bibirevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/bittsevskiy-park/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/borisovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/botanicheskiy-sad/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/bratislavskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/bulvar-dmitriya-donskogo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/buninskaya-alleya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/chehovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/chertanovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/chistye-prudy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/delovoy-tsentr/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/dinamo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/domodedovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/dubrovka/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/elektrozavodskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/filatov-lug/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/izmaylovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kahovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kantemirovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kashirskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kievskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kitay-gorod/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kolomenskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kommunarka/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kotelniki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/krasnogvardeyskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/krasnye-vorota/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/krylatskoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kuntsevskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kurskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kuryanovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kutuzovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kuzminki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/kuznetskiy-most/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/lefortovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/lermontovskiy-prospekt/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/lesoparkovaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/lubyanka/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/lyublino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/marino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/marksistskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/medvedkovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/mendeleevskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/mitino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/molodyozhnaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/moskva-tovarnaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/myakinino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/nagatinskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/nagornaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/nizhegorodskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/novogireevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/novokosino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/novokuznetskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/okruzhnaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/oktyabrskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/olhovaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/orehovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/park-kultury/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/partizanskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/paveletskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/pererva/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/perovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/pervomayskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/petrovsko-razumovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/ploschad-revolyutsii/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/polyanka/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/prazhskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/prokshino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/prospekt-vernadskogo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/pushkinskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/pyatnitskoe-shosse/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/rizhskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/rubtsovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/rumyantsevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/ryazanskiy-prospekt/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/salarevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/savyolovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/schyolkovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/seligerskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/semyonovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/serpuhovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/shipilovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/shosse-entuziastov/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/sokol/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/spartak/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/strogino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/studencheskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/suharevskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/sviblovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/taganskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/teatralnaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/tekstilschiki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/tretyakovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/troparyovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/tsaritsyno/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/tsvetnoy-bulvar/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/tulskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/turgenevskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/tverskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/ugreshskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/ulitsa-akademika-yangelya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/ulitsa-gorchakova/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/ulitsa-starokachalovskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/universitet/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/varshavskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/vdnh/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/verhnie-lihobory/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/volgogradskiy-prospekt/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/volokolamskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/volzhskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/vyhino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/yuzhnaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/zhulebino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/metro/zil/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/metro/zyablikovo/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/pivo.html</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alkodastavka.vercel.app/metro/zyablikovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <loc>https://alkodastavka.vercel.app/pivo/</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/podarochnye-nabory.html</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/policy.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/policy/</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/23-fevralya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/8-marta/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/afterparty/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/den-rozhdeniya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/den-svyatogo-valentina/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/deshevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/korporativ/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/nocheyu/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/novyj-god/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/premium/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/povod/srochno/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/privacy.html</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/1-вермут-cinzano-bianco-1-0-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/10-вино-chianti-docg-красное-сухое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/100-ром-havana-club-anejo-especial-3-года-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/101-barcelo-gran-anejo-dark-0-7.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/102-ром-capitan-morgan-white-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/103-ром-capitan-morgan-spiced-gold-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/104-barcelo-blanco-0-7-л.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/105-сигареты-парламент-parlament-аqua-blue.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/106-сигареты-marlboro-с-кнопкой.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/107-сигареты-красные-marlboro-red.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/108-сигареты-кент-kent-blue-futura.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/109-сигареты-кент-kent-nano-silver.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/11-вино-comte-de-mariac-белое-полусладкое-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/110-сигареты-вог-vogue-menthe.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/111-вода-кока-кола-coca-cola-2-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/112-сигареты-винстон-winston-x-style-blu.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/113-сигареты-винстон-winston-blue.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/114-сигареты-кент-kent-silver-neo-4.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/115-вода-аква-aqua-minerale-с-газом-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/116-вода-borjomi-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/117-вода-аква-aqua-minerale-негаз-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/118-вода-schweppes-indian-tonic-1-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/119-зажигалка.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/12-вино-mancura-sauvignon-blanc-белое-сухое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/120-сок-rich-яблоко-1-0-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/121-текила-sauza-blanco-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/122-текила-olmeca-gold-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/123-текила-jose-cuervo-especial-reposado-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/124-шампанское-abrau-durso-brut-россия-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/125-шампанское-российское-белое-полусладкое-россия-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/126-вино-игристое-риондо-просекко-фризанте-белое-сухое-0-75-л.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/127-шампанское-gancia-prosecco-италия-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/129-шампанское-asti-mondoro-docg-белое-сладкое-италия-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/13-вино-vinedos-santa-lucia-sauvignon-blanc-белое-сухое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/130-шампанское-абрау-дюрсо-полусладкое-россия-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/131-шампанское-mondoro-brut-италия-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/132-вино-игристое-inkerman-белое-сухое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/133-игристое-вино-issi-malvasia-spumante-белое-сладкое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/134-шампанское-martini-asti-италия-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/135-вино-massimo-visconti-lambrusco-белое-сладкое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/136-шампанское-cinzano-prosecco-белое-сухое-италия-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/137-вино-игристое-massimo-visconti-lambrusco-rosso-dolce-красное-сладкое-0.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/138-шампанское-boscaбелое-полу-сладкое-литва-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/139-шампанское-abrau-light-полусладкое-россия-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/14-вино-киндзмараули-красное-полусладкое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/15-вино-gewurztraminer-белое-полусладкое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/16-вино-mare-alta-vinho-verde-белое-полусухое-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/17-вино-mancura-cabernet-красное-сухое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/18-вино-comte-de-mariac-красное-сухое-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/19-вино-кампо-вента-дон-хуан-тиерра-де-кастилья-белое-сухое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/2-вермут-martini-extra-dry-белый-сухой-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/20-вино-игристое-inkerman-rose-полусладкое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/21-вино-pinot-noir-красное-сухое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/22-вино-inkerman-мускат-белое-полусладкое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/23-виски-ballantine-s-1-0-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/24-white-horse-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/25-виски-bell-s-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/26-виски-william-lawson-s-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/27-виски-bell-s-1-0-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/28-виски-ballantine-s-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/29-виски-jameson-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/3-вермут-martini-fiero-1-литра-schweppes-1-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/30-виски-jack-daniel-s-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/31-виски-johnnie-walker-red-label-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/32-виски-jim-beam-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/33-виски-william-lawson-s-1-0-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/34-виски-jameson-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/35-виски-jim-beam-apple-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/36-виски-johnnie-walker-red-label-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/37-виски-bell-s-spiced-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/38-виски-jameson-1-0-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/39-водка-5-озер-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/4-вермут-gancia-bianco-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/40-водка-absolut-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/41-водка-5-озер-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/42-водка-absolut-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/43-водка-русский-стандарт-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/44-водка-русский-стандарт-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/45-водка-журавли-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/46-водка-зеленая-марка-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/47-водка-талка-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/48-водка-nemiroff-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/49-водка-хортица-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/5-вермут-cinzano-bianco-белое-сладкое-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/50-водка-хортица-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/51-водка-nemiroff-перец-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/52-водка-царская-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/53-водка-царская-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/54-настойка-nemiroff-клюква-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/55-джин-beefeater-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/56-джин-gordon-s-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/57-джин-tanqueray-london-dry-1-0-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/58-коньяк-старый-кенингсберг-4-года-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/59-коньяк-дару-бенд-5-лет-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/6-вермут-martini-bianco-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/60-коньяк-david-ivereli-7-лет-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/61-коньяк-кочари-3-года-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/62-коньяк-арарат-3-года-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/63-коньяк-арарат-3-года-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/64-коньяк-ной-3-года-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/65-коньяк-a-de-fussigny-selection-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/66-коньяк-кочари-5-лет-0-5-л.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/67-коньяк-арарат-5-звезд-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/68-коньяк-арарат-5-звезд-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/69-коньяк-hennessy-vs-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/7-вино-comte-de-mariac-красное-полусладкое-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/70-коньяк-courvoisier-vs-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/71-коньяк-hennessy-vsop-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/72-коньяк-remy-martin-superieur-vs-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/73-коньяк-courvoisier-vsop-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/74-ликер-jagermeisterp-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/75-ликер-лимончелло-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/76-ликер-baileys-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/77-ликер-ксу-ксу-xuxu-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/78-aperol-1-0-литр.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/79-ликер-sheridan-s-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/8-вино-c-era-una-volta-pinot-grigio-белое-сухое-0-75-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/80-ликер-sambuca-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/81-ликер-becherovka-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/82-ликер-cointreau-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/83-пиво-bud-0-45-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/84-пиво-krusovice-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/85-пиво-охота-крепкое-0-45-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/86-пиво-tuborg-green-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/87-пиво-kozel-светлое-0-45-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/88-пиво-corona-extra-0-33-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/89-пиво-шпатен-0-45-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/9-вино-comte-de-mariac-белое-сухое-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/90-пиво-hoegaarden-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/91-пивo-kozel-темное-0-45-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/92-пиво-кроненбург-1664-blanco-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/93-пиво-miller-0-45-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/94-пиво-redd-s-яблочный-0-33-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/95-ром-capitan-morgan-spiced-gold-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/96-ром-bacardi-черный-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/97-ром-bacardi-белый-0-7-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/98-ром-bacardi-белый-0-5-литра.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/product/99-barcelo-dorado-0-7.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/aeroport/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/akademicheskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/alekseevskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/altufevskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/arbat/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/babushkinskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/basmannyy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/belyaevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/beskudnikovskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/bibirevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/biryulyovo-vostochnoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/biryulyovo-zapadnoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/bogorodskoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/brateevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/cheryomushki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/danilovskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/degunino-vostochnoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/degunino-zapadnoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/donskoy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/gagarinskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/golyanovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/hamovniki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/horoshyovo-mnyovniki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/horoshyovskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/hovrino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/ivanovskoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/izmaylovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/kapotnya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/konkovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/kosino-uhtomskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/kotlovka/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/krasnoselskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/krylatskoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/kuntsevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/kurkino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/kuzminki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/lefortovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/lianozovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/lomonosovskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/losinoostrovskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/lyublino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/marfino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/marino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/meschanskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/metrogorodok/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/mitino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/moskvoreche-saburovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/mozhayskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/nagatino-sadovniki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/nagatinskaya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/nagatinskiy-zaton/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/nagatinskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/nagornyy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/nekrasovka/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/nikulino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/nizhegorodskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/novo-peredelkino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/novogireevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/obruchevskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/ochakovo-matveevskoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/orehovo-borisovo-severnoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/orehovo-borisovo-yuzhnoe/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/ostankinskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/pechatniki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/perovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/pokrovskoe-streshnevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/presnenskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/prospekt-vernadskogo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/ramenki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/rostokino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/ryazanskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/schukino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/severnoe-butovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/severnoe-chertanovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/severnoe-izmaylovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/severnoe-medvedkovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/severnoe-ochakovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/severnyy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/sokol/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/sokolinaya-gora/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/sokolniki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/solntsevo-park/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/solntsevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/strogino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/sviblovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/taganskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/tekstilschiki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/troparyovo-nikulino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/troparyovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/tsaritsyno/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/tverskoy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/tyoplyy-stan/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/veshnyaki/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/vnukovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/vostochnoe-izmaylovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/vostochnyy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/vyhino-zhulebino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/yakimanka/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/yaroslavskiy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/yasenevo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/yuzhnoe-butovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/yuzhnoe-chertanovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/yuzhnoe-medvedkovo/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/yuzhnoportovyy/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/zamoskvoreche/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/raion/zyuzino/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/rayony.html</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/rom.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/rom/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/shampanskoe.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/shampanskoe/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/sigarety.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/sigarety/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/tekila.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/tekila/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/vermut.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/vermut/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/vino.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/vino/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/viski.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/viski/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/vodka.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alkodastavka.vercel.app/vodka/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/dostavka-nochyu-rabotaet-li/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/dostavka-za-mkad/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/menedzher-ne-otvechaet/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/minimalnaya-summa-zakaza/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/oplata-nalichnye-sbp/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/originalnost-alkogolya/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/proverka-vozrasta-18/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/stoimost-dostavki-mkad/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/vremya-dostavki-moskva/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alkodastavka.vercel.app/vopros/zakaz-cherez-whatsapp/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
