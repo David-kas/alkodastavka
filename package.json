@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node scripts/patch-performance.mjs && node scripts/patch-oneclick-order.mjs",
     "generate:seo": "node scripts/generate-seo-pages.mjs",
     "fix:seo": "node scripts/fix-site-seo.mjs",
     "patch:cart": "node scripts/patch-header-cart.mjs",
@@ -18,6 +19,7 @@
     "build:assets": "node scripts/build-assets.mjs",
     "patch:perf": "node scripts/patch-performance.mjs",
     "export:catalog": "node scripts/export-catalog-json.mjs",
+    "content:home": "node scripts/inject-home-service-details.mjs",
     "catalog:render": "node scripts/render-catalog-html.mjs",
     "seed:blob": "node scripts/seed-blob-catalog.mjs",
     "perf": "npm run build:assets && npm run patch:perf",

@@ -828,6 +828,102 @@ button.sticky-cta-form {
     margin-bottom: 20px;
 }
 
+.service-details-section {
+    padding: 28px 0 18px;
+    background: #f7f7f7;
+}
+
+.service-details {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+
+.service-details > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 58px 22px 24px;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    color: #1a1a1a;
+}
+
+.service-details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.service-details > summary span {
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.service-details > summary small {
+    color: #777;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.service-details > summary::after {
+    content: "+";
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d32f2f;
+    font-size: 1.8rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.service-details[open] > summary::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.service-details-content {
+    padding: 4px 24px 30px;
+    border-top: 1px solid #eee;
+}
+
+.service-details-content > :first-child {
+    margin-top: 22px;
+}
+
+@media (max-width: 640px) {
+    .service-details-section {
+        padding: 18px 0 12px;
+    }
+
+    .service-details > summary {
+        display: block;
+        padding: 18px 48px 18px 18px;
+    }
+
+    .service-details > summary span {
+        display: block;
+        font-size: 1.15rem;
+    }
+
+    .service-details > summary small {
+        display: block;
+        margin-top: 4px;
+        text-align: left;
+        font-size: 0.78rem;
+    }
+
+    .service-details > summary::after {
+        right: 18px;
+    }
+
+    .service-details-content {
+        padding: 2px 18px 24px;
+    }
+}
+
 .faq-item {
     margin-bottom: 20px;
     scroll-margin-top: 96px;

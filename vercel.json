@@ -1,12 +1,18 @@
 {
-  "functions": {
-    "api/telegram.js": {
-      "includeFiles": "config/telegram.json"
+  "buildCommand": "npm run build",
+  "outputDirectory": ".",
+  "framework": null,
+  "cleanUrls": false,
+  "rewrites": [
+    {
+      "source": "/api/telegram.php",
+      "destination": "/api/telegram"
     },
-    "api/send-telegram.js": {
-      "includeFiles": "config/telegram.json"
+    {
+      "source": "/api/send-telegram.php",
+      "destination": "/api/telegram"
     }
-  },
+  ],
   "redirects": [
     {
       "source": "/:path*",
