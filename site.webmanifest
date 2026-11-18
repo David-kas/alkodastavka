@@ -8,13 +8,15 @@
   "lang": "ru",
   "icons": [
     {
-      "src": "/favicon-192x192.png",
       "sizes": "192x192",
+      "purpose": "any",
+      "src": "/android-chrome-192x192.png",
       "type": "image/png"
     },
     {
-      "src": "/favicon-512x512.png",
       "sizes": "512x512",
+      "purpose": "any",
+      "src": "/android-chrome-512x512.png",
       "type": "image/png"
     }
   ]
