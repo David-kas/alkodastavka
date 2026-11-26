@@ -38,6 +38,8 @@ function walk(dir, acc = []) {
 
 let changed = 0;
 for (const fp of walk(ROOT)) {
+  // Verification documents must remain byte-for-byte intact.
+  if (/^(?:yandex_[a-f0-9]+|google[a-f0-9]+.*)\.html$/i.test(path.basename(fp))) continue;
   let html = fs.readFileSync(fp, 'utf8');
   const before = html;
   const isCatalog = /catalog\.html$/i.test(fp) || fp.endsWith('catalog.html');
