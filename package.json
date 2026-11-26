@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/patch-performance.mjs && node scripts/patch-oneclick-order.mjs",
+    "build": "node scripts/patch-performance.mjs && node scripts/patch-oneclick-order.mjs && node scripts/rebuild-sitemap.mjs && node scripts/check-indexing.mjs",
     "generate:seo": "node scripts/generate-seo-pages.mjs",
     "fix:seo": "node scripts/fix-site-seo.mjs",
     "patch:cart": "node scripts/patch-header-cart.mjs",
@@ -13,7 +13,7 @@
     "dev": "node scripts/dev-server.mjs",
     "enhance:yandex": "node scripts/enhance-yandex-seo.mjs",
     "apply:headers": "node scripts/apply-manual-headers.mjs",
-    "seo:all": "node scripts/generate-seo-pages.mjs && node scripts/fix-site-seo.mjs && node scripts/enhance-yandex-seo.mjs && node scripts/apply-manual-headers.mjs",
+    "seo:all": "node scripts/generate-seo-pages.mjs && node scripts/fix-site-seo.mjs && node scripts/enhance-yandex-seo.mjs && node scripts/apply-manual-headers.mjs && node scripts/rebuild-sitemap.mjs && node scripts/check-indexing.mjs",
     "seo:audit": "node scripts/seo-full-audit.mjs",
     "fix:schema": "node scripts/fix-schema.mjs",
     "build:assets": "node scripts/build-assets.mjs",
@@ -26,7 +26,8 @@
     "site:audit": "node scripts/site-audit.mjs",
     "rebuild:sitemap": "node scripts/rebuild-sitemap.mjs",
     "remove:ratings": "node scripts/remove-unverified-ratings.mjs",
-    "yandex:validate": "node scripts/yandex-seo-validate.mjs"
+    "yandex:validate": "node scripts/yandex-seo-validate.mjs",
+    "check:indexing": "node scripts/check-indexing.mjs"
   },
   "devDependencies": {
     "clean-css": "^5.3.3",

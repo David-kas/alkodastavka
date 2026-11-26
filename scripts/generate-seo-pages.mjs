@@ -256,7 +256,7 @@ function internalLinksSection({ metros = [], raions = [], extraLine = '' }) {
     <h2 id="seo-related-h">Дальше по сайту</h2>
     <div class="seo-related-grid">
       <div class="seo-related-card">
-        <h3>Часто заказывают у метро</h3>
+        <h3>Доставка у станций метро</h3>
         <p class="related-links-row">${metroLine}</p>
         <p><a href="/dostavka-nochyu-moskva.html">Ночью 24/7</a> · <a href="/povod/srochno/">Срочно</a> · <a href="/povod/premium/">Премиум</a> · <a href="/povod/deshevo/">Недорого</a> · <a href="/catalog.html">Каталог</a></p>
       </div>
@@ -282,7 +282,7 @@ function internalLinksSection({ metros = [], raions = [], extraLine = '' }) {
         <p><a href="/vopros/">Раздел «Вопросы»</a> · <a href="/contacts.html">Контакты и заявка</a></p>
       </div>
       <div class="seo-related-card">
-        <h3>Районы рядом</h3>
+        <h3>Другие районы Москвы</h3>
         <p class="related-links-row">${raionLine}</p>
         <p><a href="/rayony.html">Все районы</a> · <a href="/dostavka-chertanovo.html">Чертаново</a> · <a href="/dostavka-butovo.html">Бутово</a></p>
       </div>
@@ -592,7 +592,7 @@ function main() {
       <div class="seo-block">
         <h2>Как заказать</h2>
         <p>Сообщите адрес в ${escapeHtml(name)}, состав заказа и удобную оплату (наличные или СБП). Доставка в пределах МКАД от 650 ₽, минимальная сумма от 1000 ₽ — финальные цифры фиксируем при подтверждении.</p>
-        <h2>Соседние районы</h2>
+        <h2>Другие районы Москвы</h2>
         <p>${related || '<a href="/rayony.html">Все районы</a>'}</p>
         <p><a href="/metro/">Станции метро</a> · <a href="/dostavka-nochyu-moskva.html">Ночью</a> · <a href="/kategoria/">Категории</a> · <a href="/vopros/">Вопросы</a></p>
         <h2>Коротко</h2>
@@ -637,7 +637,7 @@ function main() {
       </div>
       <div class="seo-block">
         <p>Назовите выход и ориентир у подъезда — курьер передаст заказ лично. <strong>Только 18+.</strong> Оплата: наличные или СБП.</p>
-        <h2>Рядом по городу</h2>
+        <h2>Другие станции Москвы</h2>
         <p>${nearL}</p>
         <p><a href="/rayony.html">Районы</a> · <a href="/metro/">Все станции</a> · <a href="/dostavka-nochyu-moskva.html">Ночью</a> · <a href="/povod/srochno/">Срочно</a> · <a href="/povod/premium/">Премиум</a> · <a href="/povod/deshevo/">Недорого</a></p>
         <div class="legal-box"><strong>18+</strong></div>

@@ -1,97 +1,40 @@
-/**
- * Пересборка sitemap.xml по каноническим URL и mtime файлов.
- * node scripts/rebuild-sitemap.mjs
+/** Include only existing, indexable, self-canonical pages on the primary host.
+ * Do not derive lastmod from filesystem mtime: deployments reset it without content changes.
  */
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ROOT = path.join(__dirname, '..');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = 'https://alkodastavka.vercel.app';
-
-const EXCLUDE_DIRS = new Set(['node_modules', '.git', 'admin', 'scripts', 'content', 'telegram', 'lib']);
-const EXCLUDE_FILES = /^(yandex_[a-f0-9]+|google[a-f0-9]+.*|tmp-.*)\.html$/i;
-
-const PRIORITY = [
-  { test: (u) => u === `${BASE}/`, p: '1.0', cf: 'weekly' },
-  { test: (u) => u.endsWith('/catalog.html'), p: '0.95', cf: 'daily' },
-  { test: (u) => u.includes('/product/'), p: '0.7', cf: 'weekly' },
-  { test: (u) => u.includes('/kategoria/'), p: '0.85', cf: 'weekly' },
-  { test: (u) => u.includes('/metro/') || u.includes('/raion/'), p: '0.75', cf: 'monthly' },
-  { test: (u) => u.includes('/povod/') || u.includes('/vopros/'), p: '0.8', cf: 'monthly' },
-];
-
-function priorityFor(url) {
-  for (const row of PRIORITY) {
-    if (row.test(url)) return { priority: row.p, changefreq: row.cf };
-  }
-  return { priority: '0.8', changefreq: 'monthly' };
+const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'vercel.json'), 'utf8'));
+const redirects = new Set(config.redirects.filter(r => !r.has && !r.missing).map(r => decodeURIComponent(r.source)));
+const excluded = new Set(['node_modules', '.git', 'admin', 'scripts', 'content', 'telegram', 'lib', 'api']);
+function walk(dir) {
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap(e => {
+    if (e.name.startsWith('.') || excluded.has(e.name)) return [];
+    const file = path.join(dir, e.name);
+    return e.isDirectory() ? walk(file) : e.name.endsWith('.html') ? [file] : [];
+  });
 }
-
-function walk(dir, acc = []) {
-  for (const name of fs.readdirSync(dir)) {
-    const fp = path.join(dir, name);
-    const st = fs.statSync(fp);
-    if (st.isDirectory()) {
-      if (EXCLUDE_DIRS.has(name)) continue;
-      walk(fp, acc);
-    } else if (/\.html$/i.test(name)) {
-      acc.push(fp);
-    }
-  }
-  return acc;
+function attrs(tag) {
+  return Object.fromEntries([...tag.matchAll(/([\w-]+)\s*=\s*["']([^"']*)["']/g)].map(m => [m[1].toLowerCase(), m[2]]));
 }
-
-function fileToUrl(fp) {
-  const rel = path.relative(ROOT, fp).replace(/\\/g, '/');
-  if (rel === 'index.html') return `${BASE}/`;
-  if (rel.endsWith('/index.html')) return `${BASE}/${rel.replace(/index\.html$/, '')}`;
-  return `${BASE}/${rel}`;
+const urls = new Set();
+for (const file of walk(ROOT)) {
+  const rel = path.relative(ROOT, file).split(path.sep).join('/');
+  if (/^(google|yandex_|tmp-)/i.test(path.basename(file))) continue;
+  const route = '/' + rel.replace(/(^|\/)index\.html$/, '$1');
+  if (redirects.has(route)) continue;
+  const html = fs.readFileSync(file, 'utf8');
+  const metas = [...html.matchAll(/<meta\b[^>]*>/gi)].map(m => attrs(m[0]));
+  if (metas.some(m => /^(robots|yandex|googlebot)$/i.test(m.name || '') && /\b(noindex|none)\b/i.test(m.content || ''))) continue;
+  const canonical = [...html.matchAll(/<link\b[^>]*>/gi)].map(m => attrs(m[0])).find(m => m.rel === 'canonical')?.href;
+  // Missing or cross-canonical documents are never a source of sitemap entries.
+  if (!canonical || canonical !== BASE + route) continue;
+  urls.add(canonical);
 }
-
-function isNoindex(html) {
-  return /<meta\s+name=["']robots["']\s+content=["'][^"']*noindex/i.test(html);
-}
-
-function canonicalFrom(html, fallback) {
-  const m = html.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["']/i);
-  return m ? m[1].trim() : fallback;
-}
-
-const SKIP_PATHS = new Set([
-  `${BASE}/dostavka.html`,
-  `${BASE}/delivery/`,
-  `${BASE}/city-moskva.html`,
-]);
-
-const urls = new Map();
-
-for (const fp of walk(ROOT)) {
-  const rel = path.relative(ROOT, fp).replace(/\\/g, '/');
-  const baseName = path.basename(fp);
-  if (EXCLUDE_FILES.test(baseName) || rel.startsWith('content/')) continue;
-
-  const html = fs.readFileSync(fp, 'utf8');
-  if (isNoindex(html)) continue;
-
-  const fallback = fileToUrl(fp);
-  const loc = canonicalFrom(html, fallback);
-  if (!loc.startsWith(BASE)) continue;
-  if (SKIP_PATHS.has(loc)) continue;
-
-  const mtime = fs.statSync(fp).mtime.toISOString().slice(0, 10);
-  const { priority, changefreq } = priorityFor(loc);
-  urls.set(loc, { loc, lastmod: mtime, changefreq, priority });
-}
-
-const sorted = [...urls.values()].sort((a, b) => a.loc.localeCompare(b.loc));
-
-let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
-for (const u of sorted) {
-  xml += `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>\n`;
-}
-xml += '</urlset>\n';
-
-fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml, 'utf8');
-console.log(`rebuild-sitemap: ${sorted.length} URLs (products: ${sorted.filter((u) => u.loc.includes('/product/')).length})`);
+const escape = s => s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+const sorted = [...urls].sort();
+const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + sorted.map(u => `  <url><loc>${escape(u)}</loc></url>`).join('\n') + '\n</urlset>\n';
+fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml);
+console.log(`Sitemap: ${sorted.length} canonical URLs; no synthetic lastmod dates.`);

@@ -74,6 +74,8 @@ function patchTriggers(html) {
 
 let changed = 0;
 for (const fp of walk(ROOT)) {
+  // Verification documents must remain byte-for-byte intact.
+  if (/^(?:yandex_[a-f0-9]+|google[a-f0-9]+.*)\.html$/i.test(path.basename(fp))) continue;
   let html = fs.readFileSync(fp, 'utf8');
   const next = patchTriggers(ensureModal(stripFloatingMessengers(html)));
   if (next !== html) {
