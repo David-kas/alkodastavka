@@ -14,6 +14,20 @@ export default function middleware(request) {
   const url = new URL(request.url);
   const host = (request.headers.get('host') || url.host).split(':')[0].toLowerCase();
 
+  // Постоянный переезд на новый домен с сохранением URL.
+  if (host === PRIMARY_HOST) {
+    const target = new URL('https://alkohouse.online');
+    target.pathname = url.pathname;
+    target.search = url.search;
+    return new Response(null, {
+      status: 301,
+      headers: {
+        Location: target.toString(),
+        'Cache-Control': 'public, max-age=300',
+      },
+    });
+  }
+
   // Единое главное зеркало: все старые адреса переводим 301 на
   // соответствующий URL нового сайта, сохраняя путь и query string.
   // Это важно для Яндекса при переезде домена и для переноса веса
